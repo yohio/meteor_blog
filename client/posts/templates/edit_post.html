@@ -1,0 +1,8 @@
+<template name="editPost">
+    <h1>Edit Post</h1>
+    {{#if allowedEdit}}
+        {{> quickForm collection="Posts" id="editPostForm" type="method" meteormethod="editPost"}}
+    {{else}}
+        <p class="alert-warning">Authors are allowed to edit their own posts only</p>
+    {{/if}}
+</template>

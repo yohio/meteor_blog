@@ -23,3 +23,4 @@ blaze-html-templates
 sacha:spin
 accounts-password
 ian:accounts-ui-bootstrap-3
+raix:handlebar-helpers

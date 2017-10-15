@@ -2,4 +2,9 @@
     <h2>{{title}}</h2>
     <p>{{body}}</p>
     <p>by {{author}}</p>
+    {{#if isSameUser }}
+        {{#linkTo route='editPost'}}
+        <button class="btn">edit {{title}}</button>
+        {{/linkTo}}
+    {{/if}}
 </template>
