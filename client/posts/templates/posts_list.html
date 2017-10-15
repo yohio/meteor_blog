@@ -1,3 +1,7 @@
 <template name="postsList">
-    <h1>Placeholder for posts</h1>
+    {{#each posts}}
+        <hr>
+        {{> postItem}}
+        <hr>
+    {{/each}}
 </template>
